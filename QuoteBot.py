@@ -39,9 +39,7 @@ print()
 
 # Set timer to run every minute
 while(True):
-    try:
-        random_quote = happy_quotes[random.randrange(0,len(happy_quotes), 1)]
-        tweet_function(random_quote)
-        print("Successful Tweet")
-        time.sleep(60)
-    except:
+    random_quote = happy_quotes[random.randrange(0,len(happy_quotes), 1)]
+    tweet_function(random_quote)
+    print("Successful Tweet")
+    time.sleep(60)
